@@ -58,6 +58,28 @@ npm start
 
 ---
 
+## 🐳 Docker Setup
+
+This project includes an optimized multi-stage `Dockerfile` and a `docker-compose.yml` for containerized deployments.
+
+### Running with Docker Compose
+To build and start the containerized service:
+```bash
+docker compose up --build -d
+```
+
+To view container logs:
+```bash
+docker compose logs -f
+```
+
+To stop the container:
+```bash
+docker compose down
+```
+
+---
+
 ## 🧪 Testing
 
 The test suite includes robust **Unit Tests** (domain entities, code generator, use cases) and **End-to-End Integration Tests** (Express endpoints, redirection, analytics, error handling) using **Vitest** and **Supertest**.
